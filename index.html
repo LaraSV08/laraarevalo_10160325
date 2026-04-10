@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta charset="UTF-8" />
-        <meta name="description" content="Trabahando con Javascript" />
+        <meta name="description" content="Trabajo con Java Script" />
         <meta name="keywords" content="javascript,ufg,franz,alexander,lara,arevalo" />
         <meta name="author" content="Franz Alexander Lara Arévalo" />
         <meta name="copyright" content="2026 FALA" />
@@ -14,12 +14,30 @@
     <body>
         <div id="banner"></div>
 
-        <div id="mensajito">
-            Hola, este es un mensaje de la página
-            <p data-identificador="submensaje1">Hola, este es el primer párrafo dentro del div</p>
-            <p data-identificador="submensaje2">Hola, este es el segundo párrafo dentro del div</p>
-            <p data-identificador="submensaje3">Hola, este es el tercer párrafo dentro del div</p>
+            <div id="mensajito">
+                hola, este es un mensaje de la pagina
+                <p data-identificador="submensaje1">hola, este es el primer parrafo dentro del div</p>
+                <p data-identificador="submensaje2">hola, este es el segundo parrafo dentro del div</p>
+                <p data-identificador="submensaje3">hola, este es el tercero parrafo dentro del div</p>
+            </div>
+
+            <div id="sumatoria">
+                <input type="number" name="primer_sumando" id="primer_sumando" value="1.55" max="10" min="0" step="0.01" 7>
+                <input type="number" name="segundo_sumando" id="segundo_sumando" value="1.55" max="10" min="0" step="0.01" 7>
+                <div id="resultado">
+                    <button onclick="calcular('primer_sumando','segundo_sumando','salida');">calcular</button>
+                    <br />
+                    <output id="salida"></output>
+                </div>
+            </div>
+
         </div>
+
+        <button id="btn_crear_elemento" onclick="crearElemento();">Crear Imagenes</button>
+        <div id="lienzo">
+
+        </div>
+        
         <script src="js/scripts.js"></script>
     </body>
 </html>
